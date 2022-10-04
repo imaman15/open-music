@@ -1,0 +1,37 @@
+{
+  "name": "open-music",
+  "version": "1.0.0",
+  "description": "Proyek OpenMusic API",
+  "main": "index.js",
+  "scripts": {
+    "start-prod": "NODE_ENV=production node ./src/server.js",
+    "start-dev": "nodemon ./src/server.js",
+    "lint": "eslint ./src",
+    "migrate": "node-pg-migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imaman15/open-music.git"
+  },
+  "keywords": [],
+  "author": "Imam Agustian Nugraha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imaman15/open-music/issues"
+  },
+  "homepage": "https://github.com/imaman15/open-music#readme",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "dotenv": "^16.0.3",
+    "joi": "^17.6.2",
+    "nanoid": "^4.0.0",
+    "node-pg-migrate": "^6.2.2",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.20"
+  }
+}
